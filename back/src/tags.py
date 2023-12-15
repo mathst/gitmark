@@ -1,35 +1,41 @@
 from fastapi import APIRouter, HTTPException
 
-from models import Tag,User
-from database import db
+from models import Tag, User
+from database import Repository
 
 router = APIRouter()
 
+
 @router.get("/", response_model=list[Tag])
-def get_tags(user: User):
-    return db.query(Tag).filter_by(user_id=user.id).all()
+async def get_tags(user: User, repo: Repository):
+    """Busca todas as tags de um usuário."""
+    return await repo.get_tags(user.id)
+
 
 @router.post("/", response_model=Tag)
-def add_tag(tag: Tag, user: User):
+async def add_tag(tag: Tag, user: User, repo: Repository):
+    """Adiciona uma tag para um usuário."""
     tag.user_id = user.id
-    db.add(tag)
-    db.commit()
+    await repo.add_tag(tag)
     return tag
+
 
 @router.put("/", response_model=Tag)
-def edit_tag(tag: Tag, user: User):
+async def edit_tag(tag: Tag, user: User, repo: Repository):
+    """Atualiza uma tag."""
     tag.user_id = user.id
-    db.update(tag)
-    db.commit()
+    await repo.update_tag(tag)
     return tag
 
-@router.delete("/", response_model=None)
-def delete_tag(id: int, user: User):
-    tag = db.query(Tag).filter_by(id=id, user_id=user.id).first()
 
-    if tag is None:
+@router.delete("/", response_model=None)
+async def delete_tag(id: int, user: User, repo: Repository):
+    """Exclui uma tag."""
+    tag = await repo.get_tags(user.id, id=id)
+
+    if not tag:
         raise HTTPException(status_code=404, detail="Tag não encontrada")
 
-    db.delete(tag)
-    db.commit()
+    await repo.delete_tag(tag.id)
     return None
+

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from database import init_database, get_database, close_database
+from database import Database
 from models import User, Repository, Tag
 
 from auth import auth_router

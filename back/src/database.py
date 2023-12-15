@@ -1,7 +1,13 @@
 import asyncio
 import sqlalchemy as sa
+from models import User,Tag
 from sqlalchemy.ext.asyncio import create_async_engine
 
+def init_database(database_url):
+    """Inicializa o banco de dados."""
+    engine = create_async_engine(database_url)
+    Base = sa.declarative_base()
+    Base.metadata.create_all(engine)
 
 class Database:
     """Representa a conexão com o banco de dados."""
@@ -29,6 +35,37 @@ class Repository:
     def __init__(self, database: Database):
         self.database = database
 
+    async def get_users(self):
+        query = """
+            SELECT *
+            FROM users
+        """
+        result = await self.database.execute(query)
+        return [User(**row) for row in result]
+
+    async def add_user(self, user: User):
+        query = """
+            INSERT INTO users (username, password)
+            VALUES (:username, :password)
+        """
+        await self.database.execute(query, {"username": user.username, "password": user.password})
+
+    async def edit_user(self, user: User):
+        query = """
+            UPDATE users
+            SET username = :username,
+                password = :password
+            WHERE id = :id
+        """
+        await self.database.execute(query, {"username": user.username, "password": user.password, "id": user.id})
+
+    async def delete_user(self, user_id: int):
+        query = """
+            DELETE FROM users
+            WHERE id = :id
+        """
+        await self.database.execute(query, {"id": user_id})
+    
     async def get_user_by_username(self, username):
         """Busca um usuário por nome de usuário."""
         async with self.database.get_database() as connection:
@@ -89,3 +126,47 @@ class User:
 
     def __repr__(self):
         return f"<User username={self.username} password={self.password}>"
+
+class Tags:
+    """Representa as tags do usuario"""
+    
+    async def get_tags(self, user_id: int):
+        """Busca todas as tags de um usuário."""
+        async with self.database.get_database() as connection:
+            query = """
+                SELECT *
+                FROM tags
+                WHERE user_id = :user_id
+            """
+            result = await connection.execute(query, {"user_id": user_id})
+            return result.fetchall()
+
+    async def add_tag(self, tag: Tag):
+        """Adiciona uma tag para um usuário."""
+        async with self.database.get_database() as connection:
+            query = """
+                INSERT INTO tags (name, user_id)
+                VALUES (:name, :user_id)
+            """
+            await connection.execute(query, {"name": tag.name, "user_id": tag.user_id})
+
+    async def update_tag(self, tag: Tag):
+        """Atualiza uma tag."""
+        async with self.database.get_database() as connection:
+            query = """
+                UPDATE tags
+                SET name = :name
+                WHERE id = :id
+            """
+            await connection.execute(query, {"name": tag.name, "id": tag.id})
+            
+
+    async def delete_tag(self, id: int):
+        """Exclui uma tag."""
+        async with self.database.get_database() as connection:
+            query = """
+                DELETE FROM tags
+                WHERE id = :id
+            """
+            await connection.execute(query, {"id": id})
+
