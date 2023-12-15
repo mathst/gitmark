@@ -2,6 +2,7 @@ from fastapi import APIRouter, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
 
 from models import User
+from database import Repository
 
 router = APIRouter()
 

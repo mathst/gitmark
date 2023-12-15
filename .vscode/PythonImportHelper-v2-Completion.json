@@ -1,0 +1,410 @@
+[
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "OAuth2PasswordRequestForm",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Repository",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Repository",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Repository",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Repository",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_async_engine",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "auth_router",
+        "importPath": "auth",
+        "description": "auth",
+        "isExtraImport": true,
+        "detail": "auth",
+        "documentation": {}
+    },
+    {
+        "label": "repositories_router",
+        "importPath": "repositories",
+        "description": "repositories",
+        "isExtraImport": true,
+        "detail": "repositories",
+        "documentation": {}
+    },
+    {
+        "label": "tags_router",
+        "importPath": "tags",
+        "description": "tags",
+        "isExtraImport": true,
+        "detail": "tags",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "back.src.auth",
+        "description": "back.src.auth",
+        "peekOfCode": "router = APIRouter()\n@router.post(\"/login\", response_model=User)\nasync def login(\n    form_data: OAuth2PasswordRequestForm,\n    repository: Repository,\n):\n    \"\"\"Autentica um usuário.\"\"\"\n    username = form_data.username\n    password = form_data.password\n    user = await repository.get_user_by_username(username)",
+        "detail": "back.src.auth",
+        "documentation": {}
+    },
+    {
+        "label": "Database",
+        "kind": 6,
+        "importPath": "back.src.database",
+        "description": "back.src.database",
+        "peekOfCode": "class Database:\n    \"\"\"Representa a conexão com o banco de dados.\"\"\"\n    def __init__(self, database_url):\n        self.engine = create_async_engine(database_url)\n    async def init_database(self):\n        \"\"\"Inicializa o banco de dados.\"\"\"\n        self.Base = sa.declarative_base()\n        self.Base.metadata.create_all(self.engine)\n    async def get_database(self):\n        \"\"\"Retorna uma conexão com o banco de dados.\"\"\"",
+        "detail": "back.src.database",
+        "documentation": {}
+    },
+    {
+        "label": "Repository",
+        "kind": 6,
+        "importPath": "back.src.database",
+        "description": "back.src.database",
+        "peekOfCode": "class Repository:\n    \"\"\"Representa as operações de acesso ao banco de dados.\"\"\"\n    def __init__(self, database: Database):\n        self.database = database\n    async def get_users(self):\n        query = \"\"\"\n            SELECT *\n            FROM users\n        \"\"\"\n        result = await self.database.execute(query)",
+        "detail": "back.src.database",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "back.src.database",
+        "description": "back.src.database",
+        "peekOfCode": "class User:\n    \"\"\"Representa um usuário.\"\"\"\n    def __init__(self, username: str, password: str):\n        self.username = username\n        self.password = password\n    def __repr__(self):\n        return f\"<User username={self.username} password={self.password}>\"\nclass Tags:\n    \"\"\"Representa as tags do usuario\"\"\"\n    async def get_tags(self, user_id: int):",
+        "detail": "back.src.database",
+        "documentation": {}
+    },
+    {
+        "label": "Tags",
+        "kind": 6,
+        "importPath": "back.src.database",
+        "description": "back.src.database",
+        "peekOfCode": "class Tags:\n    \"\"\"Representa as tags do usuario\"\"\"\n    async def get_tags(self, user_id: int):\n        \"\"\"Busca todas as tags de um usuário.\"\"\"\n        async with self.database.get_database() as connection:\n            query = \"\"\"\n                SELECT *\n                FROM tags\n                WHERE user_id = :user_id\n            \"\"\"",
+        "detail": "back.src.database",
+        "documentation": {}
+    },
+    {
+        "label": "init_database",
+        "kind": 2,
+        "importPath": "back.src.database",
+        "description": "back.src.database",
+        "peekOfCode": "def init_database(database_url):\n    \"\"\"Inicializa o banco de dados.\"\"\"\n    engine = create_async_engine(database_url)\n    Base = sa.declarative_base()\n    Base.metadata.create_all(engine)\nclass Database:\n    \"\"\"Representa a conexão com o banco de dados.\"\"\"\n    def __init__(self, database_url):\n        self.engine = create_async_engine(database_url)\n    async def init_database(self):",
+        "detail": "back.src.database",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "back.src.main",
+        "description": "back.src.main",
+        "peekOfCode": "app = FastAPI()\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],\n    allow_credentials=True,\n    allow_methods=[\"*\"],\n    allow_headers=[\"*\"],\n)\n@app.on_event(\"startup\")\nasync def startup():",
+        "detail": "back.src.main",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "back.src.models",
+        "description": "back.src.models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    username = Column(String(255), unique=True)\n    password = Column(String(255))\n    # Relacionamento com a tabela `tags`\n    tags = relationship(\"Tag\", back_populates=\"user\")\nclass Repository(Base):\n    __tablename__ = \"repositories\"\n    id = Column(Integer, primary_key=True, autoincrement=True)",
+        "detail": "back.src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Repository",
+        "kind": 6,
+        "importPath": "back.src.models",
+        "description": "back.src.models",
+        "peekOfCode": "class Repository(Base):\n    __tablename__ = \"repositories\"\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    name = Column(String(255))\n    description = Column(String(255))\n    url = Column(String(255))\n    user_id = Column(Integer, ForeignKey(\"users.id\"))\nclass Tag(Base):\n    __tablename__ = \"tags\"\n    id = Column(Integer, primary_key=True, autoincrement=True)",
+        "detail": "back.src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Tag",
+        "kind": 6,
+        "importPath": "back.src.models",
+        "description": "back.src.models",
+        "peekOfCode": "class Tag(Base):\n    __tablename__ = \"tags\"\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    name = Column(String(255))\n    # Relacionamento com a tabela `users`\n    user = relationship(\"User\", back_populates=\"tags\")",
+        "detail": "back.src.models",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "back.src.models",
+        "description": "back.src.models",
+        "peekOfCode": "Base = declarative_base()\nclass User(Base):\n    __tablename__ = \"users\"\n    id = Column(Integer, primary_key=True, autoincrement=True)\n    username = Column(String(255), unique=True)\n    password = Column(String(255))\n    # Relacionamento com a tabela `tags`\n    tags = relationship(\"Tag\", back_populates=\"user\")\nclass Repository(Base):\n    __tablename__ = \"repositories\"",
+        "detail": "back.src.models",
+        "documentation": {}
+    },
+    {
+        "label": "get_repositories",
+        "kind": 2,
+        "importPath": "back.src.repositories",
+        "description": "back.src.repositories",
+        "peekOfCode": "def get_repositories(user: User):\n    return db.query(Repository).filter_by(user_id=user.id).all()",
+        "detail": "back.src.repositories",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "back.src.repositories",
+        "description": "back.src.repositories",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", response_model=list[Repository])\ndef get_repositories(user: User):\n    return db.query(Repository).filter_by(user_id=user.id).all()",
+        "detail": "back.src.repositories",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "back.src.tags",
+        "description": "back.src.tags",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", response_model=list[Tag])\nasync def get_tags(user: User, repo: Repository):\n    \"\"\"Busca todas as tags de um usuário.\"\"\"\n    return await repo.get_tags(user.id)\n@router.post(\"/\", response_model=Tag)\nasync def add_tag(tag: Tag, user: User, repo: Repository):\n    \"\"\"Adiciona uma tag para um usuário.\"\"\"\n    tag.user_id = user.id\n    await repo.add_tag(tag)",
+        "detail": "back.src.tags",
+        "documentation": {}
+    }
+]
